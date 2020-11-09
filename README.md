@@ -1,0 +1,2 @@
+# qt_PhotoAddWord
+使用QT实现在WIN系统上的图片下方添加多条文字信息

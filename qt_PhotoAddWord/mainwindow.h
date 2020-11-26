@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QDropEvent>
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -18,6 +19,9 @@ public:
 private slots:
     void on_btn_input_clicked();
 
+//protected:
+//    void dropEvent(QDropEvent *event);
+//    void dragEnterEvent(QDragEnterEvent *event);
 
 private:
     Ui::MainWindow *ui;

@@ -19,6 +19,9 @@ public:
 private slots:
     void on_btn_input_clicked();
 
+private:
+    QPixmap stitchPixmap(QPixmap src_pix, QPixmap obj_pix);
+
 //protected:
 //    void dropEvent(QDropEvent *event);
 //    void dragEnterEvent(QDragEnterEvent *event);

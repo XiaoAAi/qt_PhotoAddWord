@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>Po/show.jpg</file>
+        <file>Po/txt.jpg</file>
     </qresource>
 </RCC>

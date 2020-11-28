@@ -23,10 +23,14 @@ private slots:
 
     void on_btn_preview_clicked();
 
+    void on_ledit_len_editingFinished();
+
 private:
     QPixmap stitchPixmap(QPixmap src_pix, QPixmap obj_pix);
     QPixmap src_pixmap;//源pixmap
     QPixmap src_world; //源字符生成pixmap
+    QPixmap src_world2;
+    QPixmap src_world3;
     QPixmap obj_pixmap;//目标生成obj_pixmap
 
 //protected:

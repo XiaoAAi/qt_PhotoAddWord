@@ -64,7 +64,7 @@ void MainWindow::on_btn_input_clicked()
     QString filename = NULL;
     filename = QFileDialog::getOpenFileName(this, tr("Open Images"), \
                "", tr("Image Files (*.png *.jpg *.bmp)"));
-    if(filename != NULL)
+    if(!filename.isEmpty())
     {     
         src_pixmap = QPixmap(filename);
         ui->lab_display->setPixmap(src_pixmap);
@@ -119,7 +119,12 @@ void MainWindow::on_btn_load_clicked()
 {
     if(!obj_pixmap.isNull())
     {
-        obj_pixmap.save("obj.png");
+        QString filename = QFileDialog::getSaveFileName(this,tr("Save Image"),"object.png",tr("Images (*.png *.bmp *.jpg)")); //选择路径
+        //qDebug() << filename;
+        if(!filename.isEmpty()){
+            obj_pixmap.save(filename);
+        }
+
     }
 }
 

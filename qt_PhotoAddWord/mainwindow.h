@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QDropEvent>
+#include <QLabel>
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -27,6 +28,7 @@ private slots:
 
 private:
     QPixmap stitchPixmap(QPixmap src_pix, QPixmap obj_pix);
+    QSize retAdjustPixmap(QPixmap src_pix, QSize lab_size);
     QPixmap src_pixmap;//源pixmap
     QPixmap src_world; //源字符生成pixmap
     QPixmap src_world2;

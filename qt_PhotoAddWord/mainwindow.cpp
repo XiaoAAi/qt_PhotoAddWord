@@ -6,14 +6,16 @@
 #include <QDropEvent>
 #include <QPainter>
 
-#define   VERSION    "PhotoAddWord_V0.0.4;Date:2020.11.29"
+#define   VERSION    "PhotoAddWord_V1.0.0;Date:2020.11.29"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    setWindowTitle(VERSION);    //设置title
+    this->setWindowTitle(VERSION);    //设置title
+    this->setWindowFlags(Qt::WindowCloseButtonHint|Qt::WindowMinimizeButtonHint);
+
     ui->btn_input->setStyleSheet("QPushButton{background-color: transparent;font:100px bold;}");//背景透明   字体100px
     ui->ledit_w->setStyleSheet("QLineEdit{background-color:white;border-width:0;border-style:outset; font:bold; font-size:20px;}");//背景白色  无边框  font 20px bold
     ui->ledit_w2->setStyleSheet("QLineEdit{background-color:white;border-width:0;border-style:outset; font:bold; font-size:20px;}");//背景白色  无边框  font 20px bold
